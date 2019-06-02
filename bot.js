@@ -64,7 +64,7 @@ client.on('message', message => {
   command = command.slice(prefix.length);
 
   let args = message.content.split(" ").slice(1);
-  if(command == `قل1`){
+  if(command == `قل3`){
    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("no")
    let botmessage = args.join(" ");
    message.delete().catch;
@@ -112,7 +112,7 @@ client2.on('message', message => {
   command = command.slice(prefix.length);
 
   let args = message.content.split(" ").slice(1);
-if(command == `قل2`){
+if(command == `قل4`){
  if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("no")
  let botmessage = args.join(" ");
  message.delete().catch;
